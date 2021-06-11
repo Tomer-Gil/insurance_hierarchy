@@ -24,19 +24,15 @@ main {
 }
 #insurances {
     grid-area: insurances;
-    grid-column: 1/5;
 }
 #savings {
     grid-area: savings;
-    grid-column: 5/9;
 }
 #short_term_saving {
     grid-area: short_term_saving;
-    grid-column: 5/7;
 }
 #long_term_savings {
     grid-area: long_term_savings;
-    grid-column: 7/9;
 }
 #pensions {
     grid-area: pensions;
