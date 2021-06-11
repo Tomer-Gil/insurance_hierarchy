@@ -1,0 +1,24 @@
+html {
+    direction: rtl;
+}
+body {
+    font-family: Heebo;
+    text-align: center;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-areas: 'life elemntary marine' 'insurances savings' 'long_term_savings short_term_saving' 'pension gemel'; */
+}
+#life_insurance > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#savings > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#long_term_savings > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
