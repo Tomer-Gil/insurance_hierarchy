@@ -7,18 +7,40 @@ body {
 }
 main {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* grid-template-areas: 'life elemntary marine' 'insurances savings' 'long_term_savings short_term_saving' 'pension gemel'; */
+    grid-template-areas:
+        'life_insurances life_insurances life_insurances life_insurances life_insurances life_insurances life_insurances life_insurances elementary_insurances elementary_insurances elementary_insurances elementary_insurances elementary_insurances elementary_insurances elementary_insurances elementary_insurances marine_insurances marine_insurances marine_insurances marine_insurances marine_insurances marine_insurances marine_insurances marine_insurances'
+        'insurances insurances insurances insurances savings savings savings savings . . . . . . . . . . . . . . . .'
+        '. . . . short_term_saving short_term_saving long_term_savings long_term_savings . . . . . . . . . . . . . . . .'
+        '. . . . . . pensions gemel . . . . . . . . . . . . . . . .';
 }
-#life_insurance > div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+#life_insurances {
+    grid-area: life_insurances;
 }
-#savings > div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+#elementary_insurances {
+    grid-area: elementary_insurances;
 }
-#long_term_savings > div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+#marine_insurances {
+    grid-area: marine_insurances;
+}
+#insurances {
+    grid-area: insurances;
+    grid-column: 1/5;
+}
+#savings {
+    grid-area: savings;
+    grid-column: 5/9;
+}
+#short_term_saving {
+    grid-area: short_term_saving;
+    grid-column: 5/7;
+}
+#long_term_savings {
+    grid-area: long_term_savings;
+    grid-column: 7/9;
+}
+#pensions {
+    grid-area: pensions;
+}
+#gemel {
+    grid-area: gemel;
 }
